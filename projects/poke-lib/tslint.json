@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "pokeLib",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "poke-lib",
+      "kebab-case"
+    ]
+  }
+}

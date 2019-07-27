@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "poke-lib": [
+        "dist/poke-lib"
+      ],
+      "poke-lib/*": [
+        "dist/poke-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
