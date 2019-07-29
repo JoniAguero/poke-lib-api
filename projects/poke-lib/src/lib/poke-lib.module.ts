@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ApiService } from './services/api/api.service';
+import { PokemonApiService } from './services/api/api.service';
 
 
 @NgModule({
@@ -7,6 +7,6 @@ import { ApiService } from './services/api/api.service';
   imports: [
   ],
   exports: [],
-  providers: [ApiService]
+  providers: [PokemonApiService]
 })
 export class PokeLibModule { }
