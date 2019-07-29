@@ -1,32 +1,34 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { URL_API } from '../../constants/endpoints/urls';
+import { Pokemon } from '../../models/pokemon';
+import { Observable } from 'rxjs';
+import { map, filter } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 
 
-export class ApiService {
+export class PokemonApiService {
 
   constructor(private http: HttpClient) { }
-  getData(): Observable<any> {
+  getAll(): Observable<any> {
     return this.http.get(URL_API);
   }
 
-  /* }
-  getDataByName(name: string) {
-    return this.http.get(this.URL)
+  getByName(name: string) {
+    return this.http.get(URL_API)
     .pipe(
-      map((result: BrastlewarkModel) => result.Brastlewark.find(item => item.name === name))
+      filter((result: Pokemon) => result.name === name)
     );
   }
-  getDataById(id: number) {
-    return this.http.get(this.URL)
+
+  getById(id: string) {
+    return this.http.get(URL_API)
       .pipe(
-        map((result: BrastlewarkModel) => result.Brastlewark.find(item => item.id === id))
+        filter((result: Pokemon) => result.id === id)
       );
-  } */
+  }
 
 }
