@@ -17,14 +17,14 @@ export class PokemonApiService {
     return this.http.get(URL_API);
   }
 
-  getByName(name: string) {
+  getByName(name: string): Observable<Pokemon> {
     return this.http.get(URL_API)
     .pipe(
       filter((result: Pokemon) => result.name === name)
     );
   }
 
-  getById(id: string) {
+  getById(id: string): Observable<Pokemon> {
     return this.http.get(URL_API)
       .pipe(
         filter((result: Pokemon) => result.id === id)
