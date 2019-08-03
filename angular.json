@@ -83,7 +83,8 @@
           "options": {
             "main": "projects/poke-lib/src/test.ts",
             "tsConfig": "projects/poke-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/poke-lib/karma.conf.js"
+            "karmaConfig": "projects/poke-lib/karma.conf.js",
+            "codeCoverage": true
           }
         },
         "lint": {
