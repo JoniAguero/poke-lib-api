@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
-    "test": "ng test --code-coverage",
+    "test": "npm run cover && ng test --code-coverage",
     "lint": "ng lint",
     "cover": "istanbul cover node_modules/jasmine/bin/jasmine.js"
   },
@@ -43,6 +43,7 @@
     "karma": "~4.1.0",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-coveralls": "^2.1.0",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "ng-packagr": "^5.1.0",

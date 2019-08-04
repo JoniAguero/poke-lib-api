@@ -16,14 +16,11 @@ module.exports = function(config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
-      dir: require("path").join(__dirname, "../../coverage/PokemonServicesApi"),
+      dir: require("path").join(__dirname, "../../coverage"),
       reports: ["html", "lcovonly", "text-summary"],
       fixWebpackSourcePaths: true
     },
-    reporters:
-      config.angularCli && config.angularCli.codeCoverage
-        ? ["mocha", "coverage-istanbul"]
-        : ["mocha", "kjhtml"],
+    reporters: ["progress", "kjhtml"],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
