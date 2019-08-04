@@ -3,11 +3,10 @@
   "version": "1.0.8",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test --code-coverage",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "cover": "istanbul cover node_modules/jasmine/bin/jasmine.js"
   },
   "files": [
     "dist/poke-lib"
