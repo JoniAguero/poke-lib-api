@@ -9,7 +9,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "files": [
+    "dist/poke-lib"
+  ],
+  "types": "./dist/poke-lib/poke-lib.d.ts",
+  "private": false,
   "dependencies": {
     "@angular/animations": "~8.1.2",
     "@angular/common": "~8.1.2",
