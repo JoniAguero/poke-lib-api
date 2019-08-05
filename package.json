@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
-    "test": "rm -rf coverage && ng test --code-coverage",
+    "test": "rm -rf coverage && ng test --watch false",
     "lint": "ng lint"
   },
   "files": [
