@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
-    "test": "npm run cover && ng test --code-coverage",
+    "test": "ng test --code-coverage",
     "lint": "ng lint",
     "cover": "istanbul cover node_modules/jasmine/bin/jasmine.js"
   },
